@@ -4,7 +4,7 @@ import win32com.client
 openedDoc = win32com.client.Dispatch("Excel.Application")
 filename= sys.argv[1]
 
-password_file = open ( 'C:\Users\someone\Desktop\crack\wordlist.txt', 'r' )  # BURAYA WORDLIST YAZILACAK.
+password_file = open ( '/content/cmnd.txt', 'r' )  # BURAYA WORDLIST YAZILACAK.
 passwords = password_file.readlines()
 password_file.close()
 
