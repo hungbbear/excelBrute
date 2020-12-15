@@ -1,7 +1,7 @@
 #BruteForce script for protected exel file
 import sys
-import win32com.client
-openedDoc = win32com.client.Dispatch("Excel.Application")
+import pandas as pd
+openedDoc = pd.ExcelFile('/content/111.xlsx')
 filename= sys.argv[1]
 
 password_file = open ( '/content/cmnd.txt', 'r' )  # BURAYA WORDLIST YAZILACAK.
